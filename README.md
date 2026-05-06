@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A&L Haus- & Glaspflegeservice
 
-## Getting Started
+Production codebase for the marketing site, ported from a hi-fi prototype delivered via Claude Design.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router) + React 19 + TypeScript
+- Tailwind CSS v4 (CSS-based config in `app/globals.css`)
+- `next/font/local` with self-hosted Barlow (no external font CDN)
+- `react-hook-form` + `zod` for the contact form
+- `sonner` for toast notifications
+- `resend` for transactional email (graceful fallback if no API key)
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev    # start dev server on http://localhost:3000
+npm run build  # production build
+npm run start  # serve production build
+npm run lint   # eslint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example` to `.env.local` and fill in `RESEND_API_KEY` to enable real email delivery. Without it the contact form runs in mock mode (server logs the payload, returns `ok: true`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project layout
 
-## Learn More
+```
+app/
+  layout.tsx           # root layout, Barlow font, JSON-LD, metadata
+  page.tsx             # composes Hero ... Contact
+  globals.css          # design tokens + bespoke styles
+  api/contact/route.ts # POST handler with Resend + mock fallback
+  impressum/           # TMG §5 stub — replace before launch
+  datenschutz/         # DSGVO stub — replace before launch
+  agb/                 # optional stub
+  robots.ts, sitemap.ts
+components/
+  ui/                  # Icon, Button
+  site/                # Provider, Trigger, Toaster (cross-cutting client islands)
+  sections/            # Hero, Services, About, Process, Pricing, References,
+                       # ServiceArea, Faq, Contact, Footer, Header, MobileCta, QuoteDialog
+lib/
+  content.ts           # German strings + Stammdaten (single source for future i18n)
+  schema.ts            # zod schemas for contact + quote
+  fonts.ts             # next/font/local Barlow loader
+public/
+  fonts/Barlow-*.ttf   # self-hosted (6 weights)
+  logo-al-full*.png
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Pre-launch TODOs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Replace placeholder Impressum and Datenschutzerklärung with attorney-reviewed copy.
+- Optional: write AGB or remove the footer link.
+- Replace placeholder testimonials in `lib/content.ts` and remove the "Beispiel" banner in `References.tsx`.
+- Configure Resend domain + add `RESEND_API_KEY` to Vercel.
+- Confirm Saturday hours with the client.
+- Add real photos (currently the OG image is the brand logo).
+- Verify Lighthouse scores ≥ 95 across categories.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Source design bundle
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The original hi-fi prototype is in the design handoff bundle this codebase was ported from. See its README for design-system documentation, component intent, and the full Stammdaten reference.
