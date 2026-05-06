@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { contactSchema, quoteSchema } from '@/lib/schema';
-import { EMAIL } from '@/lib/content';
+import { EMAIL, EMAIL_OBSERVERS } from '@/lib/content';
 
 // TODO before launch:
 //   1. Verify the sending domain in Resend (e.g. al-pflegeservice.de) — see https://resend.com/docs/dashboard/domains/introduction
@@ -48,6 +48,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from,
       to: EMAIL,
+      bcc: EMAIL_OBSERVERS.length ? [...EMAIL_OBSERVERS] : undefined,
       replyTo:
         'email' in data && typeof data.email === 'string' && data.email
           ? data.email

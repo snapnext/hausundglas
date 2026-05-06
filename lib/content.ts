@@ -5,6 +5,11 @@ import type { IconName } from '@/components/ui/Icon';
 export const PHONE_TEL = '+4917184341420';
 export const PHONE_DISPLAY = '0171 8434142';
 export const EMAIL = 'd.buzhala@outlook.de';
+
+// Silent observers BCC'd on every form submission. Used during launch/QA
+// so the agency monitors deliveries without the client seeing a CC list.
+// TODO: empty this array once form delivery has been verified end-to-end.
+export const EMAIL_OBSERVERS: readonly string[] = ['max@snapnext.de'];
 export const ADDRESS = {
   street: 'Pfalzgrafenstraße 10',
   postalCode: '50259',
