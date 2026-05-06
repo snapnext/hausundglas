@@ -42,13 +42,26 @@ export const PRICING_POINTS: PricingPoint[] = [
   { icon: 'calendar', title: 'Zahlung nach Einsatz',     body: 'Sie zahlen erst, wenn das Ergebnis stimmt — per Überweisung oder vor Ort in bar.' },
 ];
 
-// TODO: replace with real reviews collected via Google Business or direct quotes,
-// and remove the "Beispiel" placeholder banner in components/sections/References.tsx.
 export type Reference = { quote: string; who: string; loc: string };
 export const REFS: Reference[] = [
-  { quote: 'Pünktlich, gründlich, fair im Preis. Unsere Treppenhäuser sehen aus wie neu — wir bleiben dabei.',         who: 'Hausverwaltung (Beispiel)', loc: 'Köln-Ehrenfeld' },
-  { quote: 'Wir lassen die Praxisfenster jetzt vierteljährlich machen. Top-Ergebnis, kein Streifen, kein Stress.',     who: 'Arztpraxis (Beispiel)',     loc: 'Pulheim' },
-  { quote: 'Nach dem Umzug die komplette Wohnung übernommen. Schnell, freundlich, vom ersten Anruf bis Schlüsselübergabe.', who: 'Privatkunde (Beispiel)', loc: 'Brauweiler' },
+  {
+    quote:
+      'Die Firma A&L leistet im Johanniter-Stift Brauweiler hervorragende Arbeit. Trotz der Größe des Objekts mit 80 Bewohnerzimmern und 24 Stiftswohnungen werden alle Fenster und Glastüren gründlich und streifenfrei gereinigt. Der Service ist zuverlässig, professionell und freundlich – absolut empfehlenswert!',
+    who: 'Kimon Dakos',
+    loc: 'Johanniter-Stift Brauweiler',
+  },
+  {
+    quote:
+      'Vom ersten Kontakt bis zur Durchführung lief alles reibungslos, professionell und äußerst freundlich ab. Alle Scheiben sind streifenfrei sauber geworden, selbst an schwer erreichbaren Stellen wurde gründlich gearbeitet. Das Preis-Leistungs-Verhältnis ist absolut fair – kann ich uneingeschränkt weiterempfehlen!',
+    who: 'Andreas Altendorf',
+    loc: 'Privatkunde',
+  },
+  {
+    quote:
+      'Wir sind sehr zufrieden mit dem Team. Vielen Dank für die gründliche Arbeit. Sehr professionell und zuverlässig. Man merkt, dass viel Wert auf Qualität und Kundenzufriedenheit gelegt wird. Alles lief reibungslos – wir buchen euch definitiv wieder.',
+    who: 'Fisnik Berisha',
+    loc: 'Privatkunde',
+  },
 ];
 
 export const AREAS = ['Pulheim', 'Köln', 'Frechen', 'Brauweiler', 'Bergheim', 'Bedburg', 'Kerpen', 'Dormagen'] as const;
