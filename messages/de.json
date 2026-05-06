@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "A&L Haus- & Glaspflegeservice – Glasreinigung & Gebäudereinigung Pulheim, Köln",
+    "description": "A&L Haus- & Glaspflegeservice aus Pulheim. Glasreinigung, Fensterreinigung, Gebäudereinigung und Hausmeisterservice für Privat- und Gewerbekunden in Pulheim, Köln und Umgebung. Festpreis · Versichert · Rückruf am selben Werktag.",
+    "ogTitle": "A&L Haus- & Glaspflegeservice – Pulheim & Köln",
+    "ogDescription": "Glasreinigung, Gebäudereinigung und Hausmeisterservice in Pulheim, Köln und Umgebung. Festpreis · Versichert."
+  },
+  "header": {
+    "skipToContent": "Zum Inhalt springen",
+    "openMenu": "Menü öffnen",
+    "close": "Schließen",
+    "navServices": "Leistungen",
+    "navAbout": "Über uns",
+    "navReferences": "Referenzen",
+    "navContact": "Kontakt",
+    "ctaQuote": "Angebot anfragen",
+    "phoneAria": "Anrufen"
+  },
+  "hero": {
+    "eyebrow": "Reinigungsservice · Pulheim · Köln",
+    "headlineLine1": "Saubere Fenster.",
+    "headlineLine2": "Gepflegte Räume.",
+    "sub": "Ihr Reinigungsservice für Privat- und Gewerbekunden in Pulheim, Köln und Umgebung — gründlich, zuverlässig und zum Festpreis.",
+    "ctaPrimary": "Angebot anfragen",
+    "ctaSecondary": "Leistungen ansehen",
+    "trustInsured": "Versichert bis 5 Mio. €",
+    "trustFixedPrice": "Festpreis-Garantie",
+    "trustCallback": "Rückruf am selben Werktag"
+  },
+  "services": {
+    "eyebrow": "Leistungen im Überblick",
+    "headline": "Was wir für Sie tun.",
+    "sub": "Ein Ansprechpartner für Glas, Räume und Fassaden — abgestimmt auf Privatkunden, Hausverwaltungen und Gewerbe.",
+    "linkLabel": "Anfragen",
+    "items": {
+      "glass":     { "title": "Glas- & Fensterreinigung",   "body": "Streifenfrei, gründlich, termingerecht — innen und außen, inkl. Rahmen und Fensterbänken." },
+      "upkeep":    { "title": "Unterhaltsreinigung",        "body": "Regelmäßige Pflege für Treppenhäuser, Büros, Praxen und Gewerbeflächen." },
+      "deep":      { "title": "Grundreinigung",             "body": "Einmalige Tiefenreinigung nach Umzug, Renovierung oder Bauabschluss." },
+      "facade":    { "title": "Fassaden- & Solarreinigung", "body": "Sorgfältige Reinigung von Fassaden, Wintergärten und Photovoltaikanlagen." }
+    }
+  },
+  "about": {
+    "eyebrow": "Über A&L",
+    "headline": "Familienbetrieb aus Pulheim — seit über 15 Jahren.",
+    "body": "Wir sind ein kleines, eingespieltes Team. Sie haben einen festen Ansprechpartner, ein klares Angebot und ein Ergebnis, das man sieht. Kein Subunternehmer-Karussell, keine versteckten Kosten.",
+    "bullet1": "Eigene, festangestellte Mitarbeiter",
+    "bullet2": "Betriebshaftpflicht bis 5 Mio. €",
+    "bullet3": "Termine werktags und samstags",
+    "bullet4": "Einsatzgebiet: Pulheim, Köln, Frechen, Brauweiler",
+    "stat1Num": "15+",
+    "stat1Lab": "Jahre im Einsatz",
+    "stat2Num": "300+",
+    "stat2Lab": "Aktive Kunden",
+    "stat3Num": "24h",
+    "stat3Lab": "Rückrufzeit werktags",
+    "stat4Num": "100%",
+    "stat4Lab": "Festpreis-Garantie"
+  },
+  "process": {
+    "eyebrow": "So einfach läuft es ab",
+    "headline": "In drei Schritten zum sauberen Ergebnis.",
+    "step1Title": "Anfrage stellen",
+    "step1Body":  "Telefon, Mail oder Formular — schildern Sie uns kurz, was gereinigt werden soll.",
+    "step2Title": "Festangebot erhalten",
+    "step2Body":  "Wir melden uns am selben Werktag mit einem klaren Festpreis und Wunschtermin.",
+    "step3Title": "Sauber abschließen",
+    "step3Body":  "Unser Team kommt pünktlich, arbeitet gründlich — und Sie zahlen nach dem Einsatz."
+  },
+  "pricing": {
+    "eyebrow": "Festpreis-Garantie",
+    "headline": "Was Sie hören, ist was Sie zahlen.",
+    "body": "Wir mögen keine Überraschungen auf der Rechnung — Sie sicher auch nicht. Deshalb arbeiten wir grundsätzlich zum vereinbarten Festpreis.",
+    "cta": "Festpreis anfragen",
+    "point1Title": "Klarer Festpreis",
+    "point1Body":  "Sie bekommen vor Auftragsbeginn einen schriftlichen Festpreis. Keine Stundenzettel-Überraschungen.",
+    "point2Title": "Kostenfreie Besichtigung",
+    "point2Body":  "Bei größeren Aufträgen schauen wir vor Ort vorbei und kalkulieren genau — ohne Anfahrtskosten.",
+    "point3Title": "Versichert",
+    "point3Body":  "Berufshaftpflicht bis 5 Mio. €. Falls etwas zu Bruch geht, sind Sie abgesichert.",
+    "point4Title": "Zahlung nach Einsatz",
+    "point4Body":  "Sie zahlen erst, wenn das Ergebnis stimmt — per Überweisung oder vor Ort in bar."
+  },
+  "references": {
+    "eyebrow": "Referenzen",
+    "headline": "Was Kundinnen und Kunden sagen.",
+    "sub": "Auszüge aus Rückmeldungen unserer Auftraggeber.",
+    "ref1Quote": "Die Firma A&L leistet im Johanniter-Stift Brauweiler hervorragende Arbeit. Trotz der Größe des Objekts mit 80 Bewohnerzimmern und 24 Stiftswohnungen werden alle Fenster und Glastüren gründlich und streifenfrei gereinigt. Der Service ist zuverlässig, professionell und freundlich – absolut empfehlenswert!",
+    "ref1Who": "Kimon Dakos",
+    "ref1Loc": "Johanniter-Stift Brauweiler",
+    "ref2Quote": "Vom ersten Kontakt bis zur Durchführung lief alles reibungslos, professionell und äußerst freundlich ab. Alle Scheiben sind streifenfrei sauber geworden, selbst an schwer erreichbaren Stellen wurde gründlich gearbeitet. Das Preis-Leistungs-Verhältnis ist absolut fair – kann ich uneingeschränkt weiterempfehlen!",
+    "ref2Who": "Andreas Altendorf",
+    "ref2Loc": "Privatkunde",
+    "ref3Quote": "Wir sind sehr zufrieden mit dem Team. Vielen Dank für die gründliche Arbeit. Sehr professionell und zuverlässig. Man merkt, dass viel Wert auf Qualität und Kundenzufriedenheit gelegt wird. Alles lief reibungslos – wir buchen euch definitiv wieder.",
+    "ref3Who": "Fisnik Berisha",
+    "ref3Loc": "Privatkunde"
+  },
+  "serviceArea": {
+    "eyebrow": "Einsatzgebiet",
+    "headline": "Wir kommen zu Ihnen — im Rhein-Erft-Kreis und Köln.",
+    "body": "Pulheim ist unser Standort, Köln und die umliegenden Gemeinden sind unser Zuhause. Andere Adressen auf Anfrage.",
+    "mapAlt": "Service-Karte des Einsatzgebiets: drei Zonen rund um Pulheim Mitte mit Köln, Frechen, Brauweiler, Bergheim, Kerpen, Brühl und Hürth."
+  },
+  "faq": {
+    "eyebrow": "Häufige Fragen",
+    "headline": "Antworten, bevor Sie fragen.",
+    "items": [
+      {
+        "q": "Wie schnell bekomme ich ein Angebot?",
+        "a": "Sie hören am selben Werktag von uns — telefonisch oder per E-Mail. Bei einfachen Aufträgen (Fenster, Wohnung) gibt es den Festpreis direkt. Bei größeren Flächen kommen wir vorbei und kalkulieren vor Ort."
+      },
+      {
+        "q": "Arbeiten Sie nach Stundensatz oder Festpreis?",
+        "a": "Festpreis. Sie wissen vor Auftragsbeginn, was die Reinigung kostet — keine offenen Stundenzettel, keine Nachverhandlungen. Wenn der Aufwand schwer einzuschätzen ist, machen wir vorab eine kurze Besichtigung."
+      },
+      {
+        "q": "Sind Sie versichert, falls etwas zu Bruch geht?",
+        "a": "Ja. Wir sind über eine Berufshaftpflicht bis 5 Mio. € versichert. Das gilt für Personen- und Sachschäden während des Einsatzes."
+      },
+      {
+        "q": "Übernehmen Sie auch regelmäßige Aufträge?",
+        "a": "Sehr gerne — Treppenhausreinigung, Büros und Praxen pflegen wir wöchentlich, vierzehntäglich oder monatlich. Wir richten Ihnen einen festen Turnus mit gleichbleibendem Ansprechpartner ein."
+      },
+      {
+        "q": "Welches Einsatzgebiet decken Sie ab?",
+        "a": "Pulheim und Köln sind unser Schwerpunkt. Wir fahren regelmäßig nach Frechen, Brauweiler, Bergheim, Bedburg, Kerpen und Dormagen. Adressen außerhalb dieses Radius gerne auf Anfrage."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "headline": "Schreiben Sie uns.",
+    "body": "Telefonisch, per Mail oder über das Formular — wir melden uns am selben Werktag zurück.",
+    "hours": "Mo–Fr 8–18 Uhr · Sa nach Vereinbarung",
+    "labelName": "Name",
+    "placeholderName": "Vor- und Nachname",
+    "labelEmail": "E-Mail",
+    "placeholderEmail": "ihre@adresse.de",
+    "labelPhone": "Telefon",
+    "placeholderPhone": "0221 ···",
+    "labelService": "Anliegen",
+    "labelMessage": "Nachricht",
+    "placeholderMessage": "Was sollen wir reinigen? Wann passt es Ihnen?",
+    "consent": "Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden. Hinweise zur",
+    "consentLink": "Datenschutzerklärung",
+    "submit": "Anfrage senden",
+    "submitting": "Senden …",
+    "sentTitle": "Vielen Dank.",
+    "sentBody": "Wir melden uns am selben Werktag bei Ihnen zurück.",
+    "toastSuccess": "Anfrage gesendet — wir melden uns am selben Werktag.",
+    "toastError": "Konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "errorName": "Bitte geben Sie Ihren Namen an.",
+    "errorEmailRequired": "Bitte E-Mail-Adresse angeben.",
+    "errorEmailInvalid": "Bitte eine gültige E-Mail-Adresse angeben.",
+    "errorMessage": "Bitte beschreiben Sie kurz Ihr Anliegen.",
+    "errorConsent": "Bitte stimmen Sie der Datenschutzerklärung zu.",
+    "serviceOptions": {
+      "glass":  "Glas- & Fensterreinigung",
+      "upkeep": "Unterhaltsreinigung",
+      "deep":   "Grundreinigung",
+      "facade": "Fassaden- & Solarreinigung",
+      "janitor":"Hausmeisterservice",
+      "other":  "Sonstiges"
+    }
+  },
+  "quoteDialog": {
+    "stepLabel": "Schritt {step} von 4",
+    "back": "Zurück",
+    "submit": "Anfrage senden",
+    "submitting": "Senden …",
+    "step1Title": "Welche Leistung benötigen Sie?",
+    "step2Title": "Wie groß ist die Fläche?",
+    "step3Title": "Wann passt es Ihnen?",
+    "step4Title": "Ihre Kontaktdaten",
+    "labelService": "Leistung",
+    "labelSize": "Fläche",
+    "labelWhen": "Wann",
+    "labelName": "Name",
+    "placeholderName": "Vor- und Nachname",
+    "labelContact": "Telefon oder E-Mail",
+    "placeholderContact": "0221 ··· oder ihre@adresse.de",
+    "services": {
+      "glass":  "Glas- & Fensterreinigung",
+      "upkeep": "Unterhaltsreinigung",
+      "deep":   "Grundreinigung",
+      "facade": "Fassade & Solar"
+    },
+    "sizes": {
+      "small":  "Wohnung bis 60 m²",
+      "medium": "Wohnung 60–100 m²",
+      "large":  "Haus / über 100 m²",
+      "biz":    "Gewerbe / Büro"
+    },
+    "whens": {
+      "thisWeek":  "Diese Woche",
+      "nextWeek":  "Nächste Woche",
+      "thisMonth": "Im Laufe des Monats",
+      "quoteOnly": "Nur ein Angebot"
+    }
+  },
+  "mobileCta": {
+    "call": "Anrufen",
+    "quote": "Angebot anfragen"
+  },
+  "footer": {
+    "tagline": "Reinigung für Privat- und Gewerbekunden in Pulheim, Köln und Umgebung.",
+    "colServicesHead": "Leistungen",
+    "colCompanyHead": "Unternehmen",
+    "colLegalHead": "Rechtliches",
+    "linkServices": "Leistungen",
+    "linkAbout": "Über uns",
+    "linkArea": "Einsatzgebiet",
+    "linkReferences": "Referenzen",
+    "linkContact": "Kontakt",
+    "linkImpressum": "Impressum",
+    "linkDatenschutz": "Datenschutz",
+    "linkAgb": "AGB",
+    "copyright": "© {year} A&L Haus- & Glaspflegeservice · {address}",
+    "tagline2": "Versichert · Festpreis · Rückrufservice"
+  },
+  "areas": ["Pulheim", "Köln", "Frechen", "Brauweiler", "Bergheim", "Bedburg", "Kerpen", "Dormagen"],
+  "langToggle": {
+    "label": "Sprache wechseln",
+    "de": "DE",
+    "en": "EN"
+  }
+}

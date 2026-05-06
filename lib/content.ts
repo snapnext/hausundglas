@@ -1,95 +1,64 @@
-// Central German strings — prepares for future i18n via next-intl or App Router routing.
+// Locale-invariant constants and icon mappings.
+// Translatable strings (services, steps, FAQs, etc.) live in messages/{de,en}.json
+// and are read via next-intl's useTranslations()/getTranslations() hooks.
 
 import type { IconName } from '@/components/ui/Icon';
 
 export const PHONE_TEL = '+4917184341420';
 export const PHONE_DISPLAY = '0171 8434142';
 export const EMAIL = 'd.buzhala@outlook.de';
-
-// Silent observers BCC'd on every form submission. Used during launch/QA
-// so the agency monitors deliveries without the client seeing a CC list.
-// TODO: empty this array once form delivery has been verified end-to-end.
-export const EMAIL_OBSERVERS: readonly string[] = ['max@snapnext.de'];
 export const ADDRESS = {
   street: 'Pfalzgrafenstraße 10',
   postalCode: '50259',
   city: 'Pulheim',
   country: 'DE',
 } as const;
-// TODO: confirm Saturday hours with the client before launch — currently a placeholder.
-export const HOURS = 'Mo–Fr 8–18 Uhr · Sa nach Vereinbarung';
 
-export type Service = { icon: IconName; title: string; body: string };
-export const SERVICES: Service[] = [
-  { icon: 'window',   title: 'Glas- & Fensterreinigung',   body: 'Streifenfrei, gründlich, termingerecht — innen und außen, inkl. Rahmen und Fensterbänken.' },
-  { icon: 'building', title: 'Unterhaltsreinigung',         body: 'Regelmäßige Pflege für Treppenhäuser, Büros, Praxen und Gewerbeflächen.' },
-  { icon: 'home',     title: 'Grundreinigung',              body: 'Einmalige Tiefenreinigung nach Umzug, Renovierung oder Bauabschluss.' },
-  { icon: 'drop',     title: 'Fassaden- & Solarreinigung',  body: 'Sorgfältige Reinigung von Fassaden, Wintergärten und Photovoltaikanlagen.' },
-];
+// Silent observers BCC'd on every form submission. Used during launch/QA
+// so the agency monitors deliveries without the client seeing a CC list.
+// TODO: empty this array once form delivery has been verified end-to-end.
+export const EMAIL_OBSERVERS: readonly string[] = ['max@snapnext.de'];
 
-export type Step = { n: string; title: string; body: string };
-export const STEPS: Step[] = [
-  { n: '01', title: 'Anfrage stellen',      body: 'Telefon, Mail oder Formular — schildern Sie uns kurz, was gereinigt werden soll.' },
-  { n: '02', title: 'Festangebot erhalten', body: 'Wir melden uns am selben Werktag mit einem klaren Festpreis und Wunschtermin.' },
-  { n: '03', title: 'Sauber abschließen',   body: 'Unser Team kommt pünktlich, arbeitet gründlich — und Sie zahlen nach dem Einsatz.' },
-];
+// Service identifiers — used to look up translated copy in messages and to
+// pin a fixed icon per service (icons aren't translated).
+export const SERVICE_KEYS = ['glass', 'upkeep', 'deep', 'facade'] as const;
+export type ServiceKey = (typeof SERVICE_KEYS)[number];
 
-export type PricingPoint = { icon: IconName; title: string; body: string };
-export const PRICING_POINTS: PricingPoint[] = [
-  { icon: 'euro',     title: 'Klarer Festpreis',         body: 'Sie bekommen vor Auftragsbeginn einen schriftlichen Festpreis. Keine Stundenzettel-Überraschungen.' },
-  { icon: 'check',    title: 'Kostenfreie Besichtigung', body: 'Bei größeren Aufträgen schauen wir vor Ort vorbei und kalkulieren genau — ohne Anfahrtskosten.' },
-  { icon: 'shield',   title: 'Versichert',               body: 'Berufshaftpflicht bis 5 Mio. €. Falls etwas zu Bruch geht, sind Sie abgesichert.' },
-  { icon: 'calendar', title: 'Zahlung nach Einsatz',     body: 'Sie zahlen erst, wenn das Ergebnis stimmt — per Überweisung oder vor Ort in bar.' },
-];
+export const SERVICE_ICONS: Record<ServiceKey, IconName> = {
+  glass: 'window',
+  upkeep: 'building',
+  deep: 'home',
+  facade: 'drop',
+};
 
-export type Reference = { quote: string; who: string; loc: string };
-export const REFS: Reference[] = [
-  {
-    quote:
-      'Die Firma A&L leistet im Johanniter-Stift Brauweiler hervorragende Arbeit. Trotz der Größe des Objekts mit 80 Bewohnerzimmern und 24 Stiftswohnungen werden alle Fenster und Glastüren gründlich und streifenfrei gereinigt. Der Service ist zuverlässig, professionell und freundlich – absolut empfehlenswert!',
-    who: 'Kimon Dakos',
-    loc: 'Johanniter-Stift Brauweiler',
-  },
-  {
-    quote:
-      'Vom ersten Kontakt bis zur Durchführung lief alles reibungslos, professionell und äußerst freundlich ab. Alle Scheiben sind streifenfrei sauber geworden, selbst an schwer erreichbaren Stellen wurde gründlich gearbeitet. Das Preis-Leistungs-Verhältnis ist absolut fair – kann ich uneingeschränkt weiterempfehlen!',
-    who: 'Andreas Altendorf',
-    loc: 'Privatkunde',
-  },
-  {
-    quote:
-      'Wir sind sehr zufrieden mit dem Team. Vielen Dank für die gründliche Arbeit. Sehr professionell und zuverlässig. Man merkt, dass viel Wert auf Qualität und Kundenzufriedenheit gelegt wird. Alles lief reibungslos – wir buchen euch definitiv wieder.',
-    who: 'Fisnik Berisha',
-    loc: 'Privatkunde',
-  },
-];
+// Pricing-card bullet identifiers. Same pattern as services.
+export const PRICING_KEYS = ['point1', 'point2', 'point3', 'point4'] as const;
+export type PricingKey = (typeof PRICING_KEYS)[number];
 
-export const AREAS = ['Pulheim', 'Köln', 'Frechen', 'Brauweiler', 'Bergheim', 'Bedburg', 'Kerpen', 'Dormagen'] as const;
+export const PRICING_ICONS: Record<PricingKey, IconName> = {
+  point1: 'euro',
+  point2: 'check',
+  point3: 'shield',
+  point4: 'calendar',
+};
 
-export type Faq = { q: string; a: string };
-export const FAQS: Faq[] = [
-  {
-    q: 'Wie schnell bekomme ich ein Angebot?',
-    a: 'Sie hören am selben Werktag von uns — telefonisch oder per E-Mail. Bei einfachen Aufträgen (Fenster, Wohnung) gibt es den Festpreis direkt. Bei größeren Flächen kommen wir vorbei und kalkulieren vor Ort.',
-  },
-  {
-    q: 'Arbeiten Sie nach Stundensatz oder Festpreis?',
-    a: 'Festpreis. Sie wissen vor Auftragsbeginn, was die Reinigung kostet — keine offenen Stundenzettel, keine Nachverhandlungen. Wenn der Aufwand schwer einzuschätzen ist, machen wir vorab eine kurze Besichtigung.',
-  },
-  {
-    q: 'Sind Sie versichert, falls etwas zu Bruch geht?',
-    a: 'Ja. Wir sind über eine Berufshaftpflicht bis 5 Mio. € versichert. Das gilt für Personen- und Sachschäden während des Einsatzes.',
-  },
-  {
-    q: 'Übernehmen Sie auch regelmäßige Aufträge?',
-    a: 'Sehr gerne — Treppenhausreinigung, Büros und Praxen pflegen wir wöchentlich, vierzehntäglich oder monatlich. Wir richten Ihnen einen festen Turnus mit gleichbleibendem Ansprechpartner ein.',
-  },
-  {
-    q: 'Welches Einsatzgebiet decken Sie ab?',
-    a: 'Pulheim und Köln sind unser Schwerpunkt. Wir fahren regelmäßig nach Frechen, Brauweiler, Bergheim, Bedburg, Kerpen und Dormagen. Adressen außerhalb dieses Radius gerne auf Anfrage.',
-  },
-];
+// Process step identifiers.
+export const STEP_KEYS = ['step1', 'step2', 'step3'] as const;
+export type StepKey = (typeof STEP_KEYS)[number];
 
+export const STEP_NUMBERS: Record<StepKey, string> = {
+  step1: '01',
+  step2: '02',
+  step3: '03',
+};
+
+// Reference identifiers.
+export const REF_KEYS = ['ref1', 'ref2', 'ref3'] as const;
+export type RefKey = (typeof REF_KEYS)[number];
+
+// Server-side service options enum used by the contact form schema.
+// String values are the German labels (matches the legacy <option> values),
+// translated for display via the contact.serviceOptions namespace.
 export const SERVICE_OPTIONS = [
   'Glas- & Fensterreinigung',
   'Unterhaltsreinigung',
@@ -98,3 +67,8 @@ export const SERVICE_OPTIONS = [
   'Hausmeisterservice',
   'Sonstiges',
 ] as const;
+
+// Same for the dialog's narrower service list.
+export const QUOTE_SERVICE_KEYS = ['glass', 'upkeep', 'deep', 'facade'] as const;
+export const QUOTE_SIZE_KEYS = ['small', 'medium', 'large', 'biz'] as const;
+export const QUOTE_WHEN_KEYS = ['thisWeek', 'nextWeek', 'thisMonth', 'quoteOnly'] as const;

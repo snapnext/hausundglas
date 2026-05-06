@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { ADDRESS, EMAIL, PHONE_DISPLAY } from '@/lib/content';
 
 // TODO: Replace this stub with attorney-reviewed Impressum copy before launch.
@@ -11,10 +12,31 @@ export const metadata: Metadata = {
   description: 'Impressum nach § 5 TMG.',
 };
 
-export default function ImpressumPage() {
+export default async function ImpressumPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="section">
       <div className="container" style={{ maxWidth: 720 }}>
+        {locale === 'en' && (
+          <p
+            className="meta"
+            style={{
+              padding: '12px 16px',
+              border: '1px solid var(--border)',
+              borderRadius: 'var(--radius)',
+              marginBottom: 24,
+              background: 'var(--surface-muted)',
+            }}
+          >
+            This Imprint is provided in German only as required by German law (TMG §5).
+          </p>
+        )}
         <span className="eyebrow">Rechtliches</span>
         <h1 className="h1" style={{ marginTop: 12 }}>
           Impressum

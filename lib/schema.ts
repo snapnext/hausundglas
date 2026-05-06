@@ -1,30 +1,33 @@
 import { z } from 'zod';
-import { SERVICE_OPTIONS } from './content';
+
+// Error messages are translation keys (resolved client-side via next-intl in the
+// Contact form). The API route uses safeParse and returns generic 400s without
+// exposing these keys to the user, so the literal strings here are never rendered.
 
 export const contactSchema = z.object({
-  name: z.string().trim().min(1, 'Bitte geben Sie Ihren Namen an.'),
+  name: z.string().trim().min(1, 'errorName'),
   email: z
     .string()
     .trim()
-    .min(1, 'Bitte E-Mail-Adresse angeben.')
-    .email('Bitte eine gültige E-Mail-Adresse angeben.'),
+    .min(1, 'errorEmailRequired')
+    .email('errorEmailInvalid'),
   phone: z.string().trim(),
-  service: z.enum(SERVICE_OPTIONS),
-  message: z.string().trim().min(1, 'Bitte beschreiben Sie kurz Ihr Anliegen.'),
+  // Service is one of the localized labels rendered in the form select; we don't
+  // enforce an enum here because the visible labels differ per locale.
+  service: z.string().trim().min(1),
+  message: z.string().trim().min(1, 'errorMessage'),
   consent: z.boolean().refine((v) => v === true, {
-    message: 'Bitte stimmen Sie der Datenschutzerklärung zu.',
+    message: 'errorConsent',
   }),
 });
 export type ContactInput = z.infer<typeof contactSchema>;
 
-export const QUOTE_SERVICES = ['Glas- & Fensterreinigung', 'Unterhaltsreinigung', 'Grundreinigung', 'Fassade & Solar'] as const;
-export const QUOTE_SIZES    = ['Wohnung bis 60 m²', 'Wohnung 60–100 m²', 'Haus / über 100 m²', 'Gewerbe / Büro'] as const;
-export const QUOTE_WHENS    = ['Diese Woche', 'Nächste Woche', 'Im Laufe des Monats', 'Nur ein Angebot'] as const;
-
+// Quote-dialog payload. Free-form strings — values are user-facing labels
+// rendered in the active locale; server treats them as opaque text.
 export const quoteSchema = z.object({
-  service: z.enum(QUOTE_SERVICES),
-  size: z.enum(QUOTE_SIZES),
-  when: z.enum(QUOTE_WHENS),
+  service: z.string().trim().min(1),
+  size: z.string().trim().min(1),
+  when: z.string().trim().min(1),
   name: z.string().trim().min(1),
   contact: z.string().trim().min(1),
 });

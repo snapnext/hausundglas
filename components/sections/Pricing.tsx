@@ -1,36 +1,37 @@
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@/components/ui/Icon';
-import { PRICING_POINTS } from '@/lib/content';
+import { PRICING_KEYS, PRICING_ICONS } from '@/lib/content';
 
 export function Pricing() {
+  const t = useTranslations('pricing');
   return (
     <section className="section" id="preise">
       <div className="container">
         <div className="pricing-card">
           <div>
-            <span className="eyebrow">Festpreis-Garantie</span>
+            <span className="eyebrow">{t('eyebrow')}</span>
             <h2 className="h1" style={{ marginTop: 12 }}>
-              Was Sie hören, ist was Sie zahlen.
+              {t('headline')}
             </h2>
             <p className="body-lg" style={{ marginTop: 20, color: 'var(--fg-2)' }}>
-              Wir mögen keine Überraschungen auf der Rechnung — Sie sicher auch nicht.
-              Deshalb arbeiten wir grundsätzlich zum vereinbarten Festpreis.
+              {t('body')}
             </p>
             <div style={{ marginTop: 24 }}>
               <Button variant="primary" size="lg" as="a" href="#kontakt">
-                Festpreis anfragen
+                {t('cta')}
               </Button>
             </div>
           </div>
           <ul className="pricing-list">
-            {PRICING_POINTS.map((p) => (
-              <li key={p.title}>
+            {PRICING_KEYS.map((k) => (
+              <li key={k}>
                 <span className="pricing-icon">
-                  <Icon name={p.icon} size={14} />
+                  <Icon name={PRICING_ICONS[k]} size={14} />
                 </span>
                 <div>
-                  <strong>{p.title}</strong>
-                  <span>{p.body}</span>
+                  <strong>{t(`${k}Title`)}</strong>
+                  <span>{t(`${k}Body`)}</span>
                 </div>
               </li>
             ))}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { ADDRESS, EMAIL, PHONE_DISPLAY } from '@/lib/content';
 
 // TODO: Replace this stub with reviewed Datenschutzerklärung before launch.
@@ -10,10 +11,31 @@ export const metadata: Metadata = {
   description: 'Datenschutzerklärung nach DSGVO Art. 13/14.',
 };
 
-export default function DatenschutzPage() {
+export default async function DatenschutzPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="section">
       <div className="container" style={{ maxWidth: 720 }}>
+        {locale === 'en' && (
+          <p
+            className="meta"
+            style={{
+              padding: '12px 16px',
+              border: '1px solid var(--border)',
+              borderRadius: 'var(--radius)',
+              marginBottom: 24,
+              background: 'var(--surface-muted)',
+            }}
+          >
+            This Privacy Policy is provided in German only as required by EU/German law (DSGVO Art. 13/14).
+          </p>
+        )}
         <span className="eyebrow">Rechtliches</span>
         <h1 className="h1" style={{ marginTop: 12 }}>
           Datenschutz

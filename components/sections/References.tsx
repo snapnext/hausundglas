@@ -1,26 +1,26 @@
-import { REFS } from '@/lib/content';
+import { useTranslations } from 'next-intl';
+import { REF_KEYS } from '@/lib/content';
 
 export function References() {
+  const t = useTranslations('references');
   return (
     <section className="section section-muted" id="referenzen">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Referenzen</span>
-          <h2 className="h1">Was Kundinnen und Kunden sagen.</h2>
-          <p className="body-lg section-sub">
-            Auszüge aus Rückmeldungen unserer Auftraggeber.
-          </p>
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h1">{t('headline')}</h2>
+          <p className="body-lg section-sub">{t('sub')}</p>
         </div>
         <div className="grid-3">
-          {REFS.map((r, i) => (
-            <figure key={i} className="card quote-card">
+          {REF_KEYS.map((k) => (
+            <figure key={k} className="card quote-card">
               <div className="quote-mark" aria-hidden="true">
                 „
               </div>
-              <blockquote>{r.quote}</blockquote>
+              <blockquote>{t(`${k}Quote`)}</blockquote>
               <figcaption>
-                <strong>{r.who}</strong>
-                <span>{r.loc}</span>
+                <strong>{t(`${k}Who`)}</strong>
+                <span>{t(`${k}Loc`)}</span>
               </figcaption>
             </figure>
           ))}

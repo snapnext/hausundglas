@@ -1,22 +1,25 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/Button';
 import { Icon } from '@/components/ui/Icon';
+import { Link } from '@/i18n/navigation';
+import { LangToggle } from '@/components/site/LangToggle';
 import { QuoteTrigger } from '@/components/site/QuoteTrigger';
 import { useQuoteDialog } from '@/components/site/QuoteDialogProvider';
 import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/content';
 
-const LINKS = [
-  { href: '/#leistungen', label: 'Leistungen' },
-  { href: '/#ueber-uns',  label: 'Über uns' },
-  { href: '/#referenzen', label: 'Referenzen' },
-  { href: '/#kontakt',    label: 'Kontakt' },
+const NAV = [
+  { hash: '#leistungen', key: 'navServices' },
+  { hash: '#ueber-uns',  key: 'navAbout' },
+  { hash: '#referenzen', key: 'navReferences' },
+  { hash: '#kontakt',    key: 'navContact' },
 ] as const;
 
 export function Header() {
+  const t = useTranslations('header');
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { openDialog } = useQuoteDialog();
@@ -44,22 +47,26 @@ export function Header() {
             <span>Haus- &amp; Glaspflegeservice</span>
           </div>
         </Link>
-        <nav className="hdr-nav" aria-label="Hauptnavigation">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href}>
-              {l.label}
+        <nav className="hdr-nav" aria-label={t('navServices')}>
+          {NAV.map((l) => (
+            <Link key={l.hash} href={`/${l.hash}`}>
+              {t(l.key)}
             </Link>
           ))}
         </nav>
         <div className="hdr-cta">
-          <a href={`tel:${PHONE_TEL}`} className="hdr-phone">
+          <a href={`tel:${PHONE_TEL}`} className="hdr-phone" aria-label={t('phoneAria')}>
             <Icon name="phone" size={16} /> {PHONE_DISPLAY}
           </a>
-          <QuoteTrigger variant="primary">Angebot anfragen</QuoteTrigger>
+          <LangToggle />
+          <QuoteTrigger variant="primary">{t('ctaQuote')}</QuoteTrigger>
+        </div>
+        <div className="hdr-mobile-controls">
+          <LangToggle />
         </div>
         <button
           className="hdr-menu"
-          aria-label="Menü öffnen"
+          aria-label={t('openMenu')}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
         >
@@ -68,9 +75,9 @@ export function Header() {
       </div>
       {open && (
         <div className="hdr-mobile">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
-              {l.label}
+          {NAV.map((l) => (
+            <Link key={l.hash} href={`/${l.hash}`} onClick={() => setOpen(false)}>
+              {t(l.key)}
             </Link>
           ))}
           <Button
@@ -80,7 +87,7 @@ export function Header() {
               openDialog();
             }}
           >
-            Angebot anfragen
+            {t('ctaQuote')}
           </Button>
         </div>
       )}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 
 // TODO: AGB sind optional, aber empfohlen. Inhalt vor Launch ergänzen oder Link entfernen.
 
@@ -6,7 +7,14 @@ export const metadata: Metadata = {
   title: 'AGB – A&L Haus- & Glaspflegeservice',
 };
 
-export default function AgbPage() {
+export default async function AgbPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="section">
       <div className="container" style={{ maxWidth: 720 }}>

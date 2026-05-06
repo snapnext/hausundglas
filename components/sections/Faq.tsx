@@ -1,16 +1,19 @@
+import { useTranslations } from 'next-intl';
 import { Icon } from '@/components/ui/Icon';
-import { FAQS } from '@/lib/content';
 
 export function Faq() {
+  const t = useTranslations('faq');
+  const items = t.raw('items') as { q: string; a: string }[];
+
   return (
     <section className="section section-muted" id="faq">
       <div className="container">
         <div className="section-head center">
-          <span className="eyebrow">Häufige Fragen</span>
-          <h2 className="h1">Antworten, bevor Sie fragen.</h2>
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h1">{t('headline')}</h2>
         </div>
         <div className="faq-list">
-          {FAQS.map((f, i) => (
+          {items.map((f, i) => (
             <details key={i} className="faq-item">
               <summary className="faq-summary">
                 <span>{f.q}</span>

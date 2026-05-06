@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "A&L House & Glass Care – Window cleaning & building services in Pulheim, Cologne",
+    "description": "A&L House & Glass Care from Pulheim. Window cleaning, glass cleaning, building maintenance and caretaker services for private and commercial customers in Pulheim, Cologne and the surrounding area. Fixed prices · Insured · Same-day callback.",
+    "ogTitle": "A&L House & Glass Care – Pulheim & Cologne",
+    "ogDescription": "Window cleaning, building maintenance and caretaker services in Pulheim, Cologne and the surrounding area. Fixed prices · Insured."
+  },
+  "header": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "close": "Close",
+    "navServices": "Services",
+    "navAbout": "About",
+    "navReferences": "References",
+    "navContact": "Contact",
+    "ctaQuote": "Request a quote",
+    "phoneAria": "Call us"
+  },
+  "hero": {
+    "eyebrow": "Cleaning service · Pulheim · Cologne",
+    "headlineLine1": "Spotless windows.",
+    "headlineLine2": "Cared-for spaces.",
+    "sub": "Your cleaning service for private and commercial clients in Pulheim, Cologne and the surrounding area — thorough, reliable and at a fixed price.",
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "See services",
+    "trustInsured": "Insured up to €5M",
+    "trustFixedPrice": "Fixed-price guarantee",
+    "trustCallback": "Same-day callback"
+  },
+  "services": {
+    "eyebrow": "Services at a glance",
+    "headline": "What we do for you.",
+    "sub": "One contact for glass, interiors and façades — tailored to private clients, property managers and businesses.",
+    "linkLabel": "Enquire",
+    "items": {
+      "glass":  { "title": "Glass & window cleaning",       "body": "Streak-free, thorough, on time — inside and out, including frames and sills." },
+      "upkeep": { "title": "Maintenance cleaning",          "body": "Regular care for stairwells, offices, medical practices and commercial spaces." },
+      "deep":   { "title": "Deep cleaning",                 "body": "One-off thorough cleaning after a move, renovation or completion of construction." },
+      "facade": { "title": "Façade & solar panel cleaning", "body": "Careful cleaning of façades, conservatories and photovoltaic installations." }
+    }
+  },
+  "about": {
+    "eyebrow": "About A&L",
+    "headline": "Family business from Pulheim — for over 15 years.",
+    "body": "We're a small, well-coordinated team. You get a single point of contact, a clear quote and a result you can see. No subcontractor merry-go-round, no hidden costs.",
+    "bullet1": "Our own employed staff",
+    "bullet2": "Liability insured up to €5M",
+    "bullet3": "Weekday and Saturday appointments",
+    "bullet4": "Service area: Pulheim, Cologne, Frechen, Brauweiler",
+    "stat1Num": "15+",
+    "stat1Lab": "Years on the job",
+    "stat2Num": "300+",
+    "stat2Lab": "Active customers",
+    "stat3Num": "24h",
+    "stat3Lab": "Callback time on weekdays",
+    "stat4Num": "100%",
+    "stat4Lab": "Fixed-price guarantee"
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "headline": "Three steps to a clean result.",
+    "step1Title": "Send a request",
+    "step1Body":  "Phone, mail or the form — tell us briefly what needs cleaning.",
+    "step2Title": "Receive a fixed quote",
+    "step2Body":  "We get back to you the same working day with a clear fixed price and your preferred date.",
+    "step3Title": "Finish clean",
+    "step3Body":  "Our team arrives on time, works thoroughly — and you pay after the job is done."
+  },
+  "pricing": {
+    "eyebrow": "Fixed-price guarantee",
+    "headline": "What you hear is what you pay.",
+    "body": "We don't like surprises on the invoice — and we're guessing you don't either. That's why we always work to an agreed fixed price.",
+    "cta": "Request a fixed quote",
+    "point1Title": "Clear fixed price",
+    "point1Body":  "You get a written fixed price before work starts. No timesheet surprises.",
+    "point2Title": "Free site visit",
+    "point2Body":  "For larger jobs we come on site and price it accurately — with no travel charge.",
+    "point3Title": "Insured",
+    "point3Body":  "Professional liability up to €5M. If anything breaks, you're covered.",
+    "point4Title": "Pay after the job",
+    "point4Body":  "You only pay once the result is right — by bank transfer or in cash on site."
+  },
+  "references": {
+    "eyebrow": "References",
+    "headline": "What customers are saying.",
+    "sub": "Excerpts from feedback by our clients.",
+    "ref1Quote": "A&L do excellent work at the Johanniter-Stift Brauweiler. Despite the size of the property — 80 resident rooms and 24 apartments — every window and glass door is cleaned thoroughly and streak-free. The service is reliable, professional and friendly — absolutely recommended!",
+    "ref1Who": "Kimon Dakos",
+    "ref1Loc": "Johanniter-Stift Brauweiler",
+    "ref2Quote": "From first contact to execution everything ran smoothly, professionally and very pleasantly. All panes came out streak-free, even hard-to-reach spots were done thoroughly. The price/quality ratio is genuinely fair — I can recommend them without reservation!",
+    "ref2Who": "Andreas Altendorf",
+    "ref2Loc": "Private customer",
+    "ref3Quote": "We're very happy with the team. Thanks for the thorough work. Very professional and reliable. You can tell quality and customer satisfaction matter here. Everything went smoothly — we'll definitely book them again.",
+    "ref3Who": "Fisnik Berisha",
+    "ref3Loc": "Private customer"
+  },
+  "serviceArea": {
+    "eyebrow": "Service area",
+    "headline": "We come to you — across the Rhein-Erft district and Cologne.",
+    "body": "Pulheim is our base; Cologne and the surrounding municipalities are home to us. Other addresses on request.",
+    "mapAlt": "Service map: three zones around Pulheim Mitte covering Cologne, Frechen, Brauweiler, Bergheim, Kerpen, Brühl and Hürth."
+  },
+  "faq": {
+    "eyebrow": "Frequently asked",
+    "headline": "Answers before you ask.",
+    "items": [
+      {
+        "q": "How quickly do I get a quote?",
+        "a": "You'll hear from us the same working day — by phone or email. For straightforward jobs (windows, an apartment) we give you the fixed price right away. For larger spaces we come on site and quote in person."
+      },
+      {
+        "q": "Do you charge by the hour or a fixed price?",
+        "a": "Fixed price. You know the cost before work starts — no open timesheets, no renegotiation. If the scope is hard to estimate we make a short site visit first."
+      },
+      {
+        "q": "Are you insured if something gets damaged?",
+        "a": "Yes. We carry professional liability insurance up to €5M, covering both personal injury and property damage during the job."
+      },
+      {
+        "q": "Do you handle recurring contracts?",
+        "a": "Gladly — we maintain stairwells, offices and medical practices weekly, fortnightly or monthly. We set up a fixed schedule with a consistent point of contact."
+      },
+      {
+        "q": "What service area do you cover?",
+        "a": "Pulheim and Cologne are our focus. We regularly serve Frechen, Brauweiler, Bergheim, Bedburg, Kerpen and Dormagen. Addresses outside that radius are welcome on request."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "headline": "Drop us a line.",
+    "body": "By phone, by email, or via the form — we get back to you the same working day.",
+    "hours": "Mon–Fri 8 am – 6 pm · Sat by appointment",
+    "labelName": "Name",
+    "placeholderName": "First and last name",
+    "labelEmail": "Email",
+    "placeholderEmail": "you@example.com",
+    "labelPhone": "Phone",
+    "placeholderPhone": "+49 ···",
+    "labelService": "Subject",
+    "labelMessage": "Message",
+    "placeholderMessage": "What should we clean? When works for you?",
+    "consent": "I agree that my data may be stored to process my request. See our",
+    "consentLink": "privacy policy",
+    "submit": "Send request",
+    "submitting": "Sending …",
+    "sentTitle": "Thank you.",
+    "sentBody": "We'll get back to you the same working day.",
+    "toastSuccess": "Request sent — we'll get back to you the same working day.",
+    "toastError": "Couldn't send. Please try again.",
+    "errorName": "Please enter your name.",
+    "errorEmailRequired": "Please enter an email address.",
+    "errorEmailInvalid": "Please enter a valid email address.",
+    "errorMessage": "Please briefly describe what you need.",
+    "errorConsent": "Please accept the privacy policy.",
+    "serviceOptions": {
+      "glass":  "Glass & window cleaning",
+      "upkeep": "Maintenance cleaning",
+      "deep":   "Deep cleaning",
+      "facade": "Façade & solar panel cleaning",
+      "janitor":"Caretaker service",
+      "other":  "Other"
+    }
+  },
+  "quoteDialog": {
+    "stepLabel": "Step {step} of 4",
+    "back": "Back",
+    "submit": "Send request",
+    "submitting": "Sending …",
+    "step1Title": "Which service do you need?",
+    "step2Title": "How large is the area?",
+    "step3Title": "When works for you?",
+    "step4Title": "Your contact details",
+    "labelService": "Service",
+    "labelSize": "Area",
+    "labelWhen": "When",
+    "labelName": "Name",
+    "placeholderName": "First and last name",
+    "labelContact": "Phone or email",
+    "placeholderContact": "+49 ··· or you@example.com",
+    "services": {
+      "glass":  "Glass & window cleaning",
+      "upkeep": "Maintenance cleaning",
+      "deep":   "Deep cleaning",
+      "facade": "Façade & solar"
+    },
+    "sizes": {
+      "small":  "Apartment up to 60 m²",
+      "medium": "Apartment 60–100 m²",
+      "large":  "House / over 100 m²",
+      "biz":    "Commercial / office"
+    },
+    "whens": {
+      "thisWeek":  "This week",
+      "nextWeek":  "Next week",
+      "thisMonth": "Within this month",
+      "quoteOnly": "Just a quote"
+    }
+  },
+  "mobileCta": {
+    "call": "Call",
+    "quote": "Request a quote"
+  },
+  "footer": {
+    "tagline": "Cleaning for private and commercial customers in Pulheim, Cologne and the surrounding area.",
+    "colServicesHead": "Services",
+    "colCompanyHead": "Company",
+    "colLegalHead": "Legal",
+    "linkServices": "Services",
+    "linkAbout": "About",
+    "linkArea": "Service area",
+    "linkReferences": "References",
+    "linkContact": "Contact",
+    "linkImpressum": "Imprint",
+    "linkDatenschutz": "Privacy",
+    "linkAgb": "Terms",
+    "copyright": "© {year} A&L House & Glass Care · {address}",
+    "tagline2": "Insured · Fixed price · Callback service"
+  },
+  "areas": ["Pulheim", "Cologne", "Frechen", "Brauweiler", "Bergheim", "Bedburg", "Kerpen", "Dormagen"],
+  "langToggle": {
+    "label": "Switch language",
+    "de": "DE",
+    "en": "EN"
+  }
+}

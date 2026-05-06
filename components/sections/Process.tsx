@@ -1,19 +1,21 @@
-import { STEPS } from '@/lib/content';
+import { useTranslations } from 'next-intl';
+import { STEP_KEYS, STEP_NUMBERS } from '@/lib/content';
 
 export function Process() {
+  const t = useTranslations('process');
   return (
     <section className="section" id="ablauf">
       <div className="container">
         <div className="section-head center">
-          <span className="eyebrow">So einfach läuft es ab</span>
-          <h2 className="h1">In drei Schritten zum sauberen Ergebnis.</h2>
+          <span className="eyebrow">{t('eyebrow')}</span>
+          <h2 className="h1">{t('headline')}</h2>
         </div>
         <ol className="steps">
-          {STEPS.map((s) => (
-            <li key={s.n} className="step">
-              <div className="step-num">{s.n}</div>
-              <h3>{s.title}</h3>
-              <p>{s.body}</p>
+          {STEP_KEYS.map((k) => (
+            <li key={k} className="step">
+              <div className="step-num">{STEP_NUMBERS[k]}</div>
+              <h3>{t(`${k}Title`)}</h3>
+              <p>{t(`${k}Body`)}</p>
             </li>
           ))}
         </ol>
