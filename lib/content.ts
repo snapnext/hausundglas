@@ -4,7 +4,7 @@
 
 import type { IconName } from '@/components/ui/Icon';
 
-export const PHONE_TEL = '+4917184341420';
+export const PHONE_TEL = '+491718434142';
 export const PHONE_DISPLAY = '0171 8434142';
 export const EMAIL = 'd.buzhala@outlook.de';
 export const ADDRESS = {
